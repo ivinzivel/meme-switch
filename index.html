@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Switch</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/switch.css" />
+  </head>
+  <body>
+    <main class="content">
+      <label for="switch" class="switch-container">
+        <input type="checkbox" id="switch" hidden />
+        <div class="switch-wrapper">
+          <div class="dot-wrapper">
+            <div class="dot">
+              <span class="sun"></span>
+              <div class="moon">
+                <span class="hole"></span>
+                <span class="hole"></span>
+                <span class="hole"></span>
+                <span class="hole"></span>
+              </div>
+            </div>
+            <div class="glows-wrapper">
+              <span class="glow"></span>
+              <span class="glow"></span>
+              <span class="glow"></span>
+            </div>
+          </div>
+          <div class="background-wrapper">
+            <div class="clouds-wrapper">
+              <div class="cloud first-layer">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="cloud second-layer">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+            </div>
+            <div class="stars-wrapper">
+              <dotlottie-player
+                src="https://lottie.host/20475911-9bb8-47f7-9dc8-40c9e2fb08d8/4FkodTm9Oc.json"
+                background="transparent"
+                speed="1"
+                style="width: 100%; height: 100%"
+                loop
+                autoplay
+              ></dotlottie-player>
+            </div>
+          </div>
+        </div>
+      </label>
+    </main>
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </body>
+</html>
